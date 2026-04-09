@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ==========================================================================
        Scroll Animations (Intersection Observer)
        ========================================================================== */
-    const revealElements = document.querySelectorAll('.section-reveal');
+    const revealElements = document.querySelectorAll('.section-reveal, .reveal, .reveal-left, .reveal-right');
     
     const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -142,71 +142,75 @@ document.addEventListener('DOMContentLoaded', () => {
        EMI Calculator
        ========================================================================== */
     const priceSlider = document.getElementById('price-slider');
-    const dpSlider = document.getElementById('dp-slider');
-    const roiInput = document.getElementById('roi-input');
-    const tenureRadios = document.getElementsByName('tenure');
     
-    // Output Elements
-    const priceVal = document.getElementById('price-val');
-    const dpVal = document.getElementById('dp-val');
-    const resLoan = document.getElementById('res-loan');
-    const resEmi = document.getElementById('res-emi');
-    const resTotal = document.getElementById('res-total');
-
-    function calculateEMI() {
-        const propertyPrice = parseFloat(priceSlider.value) * 100000; // in Rupees
-        const dpPercent = parseFloat(dpSlider.value);
-        const roi = parseFloat(roiInput.value);
+    // Only run EMI calculator if elements exist on this page
+    if (priceSlider) {
+        const dpSlider = document.getElementById('dp-slider');
+        const roiInput = document.getElementById('roi-input');
+        const tenureRadios = document.getElementsByName('tenure');
         
-        // Find selected tenure
-        let years = 15;
-        for (let i = 0; i < tenureRadios.length; i++) {
-            if (tenureRadios[i].checked) {
-                years = parseInt(tenureRadios[i].value);
-                break;
+        // Output Elements
+        const priceVal = document.getElementById('price-val');
+        const dpVal = document.getElementById('dp-val');
+        const resLoan = document.getElementById('res-loan');
+        const resEmi = document.getElementById('res-emi');
+        const resTotal = document.getElementById('res-total');
+
+        function calculateEMI() {
+            const propertyPrice = parseFloat(priceSlider.value) * 100000; // in Rupees
+            const dpPercent = parseFloat(dpSlider.value);
+            const roi = parseFloat(roiInput.value);
+            
+            // Find selected tenure
+            let years = 15;
+            for (let i = 0; i < tenureRadios.length; i++) {
+                if (tenureRadios[i].checked) {
+                    years = parseInt(tenureRadios[i].value);
+                    break;
+                }
             }
+
+            // Calculations
+            const downPaymentAmount = (propertyPrice * dpPercent) / 100;
+            const loanAmount = propertyPrice - downPaymentAmount;
+            
+            const monthlyRate = roi / 12 / 100;
+            const months = years * 12;
+
+            let emi = 0;
+            let totalPayable = 0;
+
+            if (monthlyRate > 0) {
+                emi = loanAmount * monthlyRate * Math.pow(1 + monthlyRate, months) / (Math.pow(1 + monthlyRate, months) - 1);
+                totalPayable = emi * months;
+            } else {
+                emi = loanAmount / months;
+                totalPayable = loanAmount;
+            }
+
+            // Update UI
+            priceVal.innerText = priceSlider.value;
+            dpVal.innerText = dpSlider.value;
+            
+            // Format to Indian Currency String
+            const formatter = new Intl.NumberFormat('en-IN');
+            resLoan.innerText = formatter.format(Math.round(loanAmount));
+            resEmi.innerText = formatter.format(Math.round(emi));
+            resTotal.innerText = formatter.format(Math.round(totalPayable));
         }
 
-        // Calculations
-        const downPaymentAmount = (propertyPrice * dpPercent) / 100;
-        const loanAmount = propertyPrice - downPaymentAmount;
+        // Attach Event Listeners for EMI Calc
+        priceSlider.addEventListener('input', calculateEMI);
+        dpSlider.addEventListener('input', calculateEMI);
+        roiInput.addEventListener('input', calculateEMI);
         
-        const monthlyRate = roi / 12 / 100;
-        const months = years * 12;
+        tenureRadios.forEach(radio => {
+            radio.addEventListener('change', calculateEMI);
+        });
 
-        let emi = 0;
-        let totalPayable = 0;
-
-        if (monthlyRate > 0) {
-            emi = loanAmount * monthlyRate * Math.pow(1 + monthlyRate, months) / (Math.pow(1 + monthlyRate, months) - 1);
-            totalPayable = emi * months;
-        } else {
-            emi = loanAmount / months;
-            totalPayable = loanAmount;
-        }
-
-        // Update UI
-        priceVal.innerText = priceSlider.value;
-        dpVal.innerText = dpSlider.value;
-        
-        // Format to Indian Currency String
-        const formatter = new Intl.NumberFormat('en-IN');
-        resLoan.innerText = formatter.format(Math.round(loanAmount));
-        resEmi.innerText = formatter.format(Math.round(emi));
-        resTotal.innerText = formatter.format(Math.round(totalPayable));
+        // Initial Calculation
+        calculateEMI();
     }
-
-    // Attach Event Listeners for EMI Calc
-    priceSlider.addEventListener('input', calculateEMI);
-    dpSlider.addEventListener('input', calculateEMI);
-    roiInput.addEventListener('input', calculateEMI);
-    
-    tenureRadios.forEach(radio => {
-        radio.addEventListener('change', calculateEMI);
-    });
-
-    // Initial Calculation
-    calculateEMI();
 
     /* ==========================================================================
        Contact Form Submission
@@ -227,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             let interestText = interest === '2bhk' ? '2 BHK Row House' : (interest === '1bhk' ? '1 BHK Flat' : interest);
 
-            const rawMessage = `*New Enquiry for Shivsamarth Residency*\n\n*Name:* ${name}\n*Mobile:* ${mobile}\n*Email:* ${email}\n*Interested In:* ${interestText}\n*Message:* ${message}`;
+            const rawMessage = `Hello, Enquiry for Shivsamarth Residency\n\nName: ${name}\nMobile: ${mobile}\nEmail: ${email}\nInterested In: ${interestText}\nMessage: ${message}`;
             const whatsappMessage = encodeURIComponent(rawMessage);
             const whatsappNumber = '917741003311'; // +91 77410 03311
 

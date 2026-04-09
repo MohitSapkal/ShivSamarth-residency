@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Shivsamarth Residency</title>
-    <meta name="description" content="Learn more about Shivsamarth Residency and Samarth Infra developers.">
+    <title>About Project - Shiv Samarth Residency | Premium Homes in Chikalthana</title>
+    <meta name="description" content="Discover Shiv Samarth Residency - 157 Row Houses & 112 Flats near Cambridge School, Savangi Bypass. Affordable premium living by Samarth Infra.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,12 +13,9 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Add top padding to account for sticky navbar on standalone pages */
-        .page-content {
-            padding-top: 120px;
-        }
-    </style>
+    <link rel="stylesheet" href="premium_about.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -28,10 +25,10 @@
             <a href="index.html" class="logo"><img src="assets/logo.png" alt="Samarth Infra Logo" class="logo-img"></a>
             
             <div class="nav-links">
+                <a href="index.html">Home</a>
                 <a href="about.html" class="active">Overview</a>
-                <a href="index.html#location">Location</a>
-                <a href="contact.html">Contact</a>
-                <a href="contact.html" class="btn btn-gold nav-cta">Book a Site Visit</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="contact.html" class="btn btn-gold nav-cta">Book a Visit</a>
             </div>
 
             <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
@@ -45,38 +42,343 @@
     <!-- Mobile Menu Overlay -->
     <div id="mobile-menu" class="mobile-menu">
         <div class="mobile-nav-links">
-            <a href="about.html" class="mobile-link">Overview</a>
-            <a href="index.html#units" class="mobile-link">Units</a>
-            <a href="index.html#specifications" class="mobile-link">Amenities</a>
-            <a href="index.html#location" class="mobile-link">Location</a>
-            <a href="contact.html" class="mobile-link">Contact</a>
-            <a href="contact.html" class="btn btn-gold mobile-cta">Book a Site Visit</a>
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="about.html" class="mobile-link active">Overview</a>
+            <a href="contact.html" class="mobile-link">Contact Us</a>
+            <a href="contact.html" class="btn btn-gold mobile-cta">Book a Visit</a>
         </div>
     </div>
 
+    <!-- Hero Section with Video -->
+    <section class="hero-premium">
+        <div class="hero-video-container">
+            <!-- Cinematic Background Video (Stock Placeholder) -->
+            <video autoplay muted loop playsinline class="hero-video" poster="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1920">
+                <source src="https://cdn.pixabay.com/video/2020/07/30/45588-445023029_large.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-premium-content">
+            <h1 class="reveal">Shiv Samarth Residency</h1>
+            <p class="tagline reveal">"A World Away From Your Everyday Life"</p>
+            <p class="description reveal">A thoughtfully designed residential community offering comfort, peace, and modern living.</p>
+            <a href="#overview" class="btn-premium btn-orange reveal">Explore Project</a>
+        </div>
+    </section>
+
     <!-- Page Content -->
-    <div class="page-content">
-        <!-- About the Project -->
-        <section id="about" class="about section-reveal visible">
-            <div class="container about-container">
-                <div class="about-text">
-                    <h2 class="section-title">The Project Story</h2>
-                    <p>Shivsamarth Residency is envisioned to create a happy community of like-minded people who appreciate comfortable living amidst nature's raw beauty and well-designed spaces.</p>
-                    <p>Experience a harmonious blend of modern architecture and peaceful surroundings, thoughtfully crafted to elevate your lifestyle.</p>
+    <div class="page-content" id="overview" style="padding-top: 0;">
+        
+        <!-- Project Overview -->
+        <section class="section-premium bg-white">
+            <div class="container">
+                <div class="section-header-premium reveal">
+                    <h2>Project Overview</h2>
+                    <p>Designed for families who seek comfort, affordability, and a peaceful lifestyle.</p>
                 </div>
-                <div class="about-card">
-                    <h3>Project Information</h3>
-                    <ul class="info-list">
-                        <li><strong>Developer:</strong> Samarth Infra</li>
-                        <li><strong>Location:</strong> Savangi Bypass, Chikalthana</li>
-                        <li><strong>RERA No.:</strong> P51500052807</li>
-                        <li><strong>Architect:</strong> Samil Architects</li>
-                        <li><strong>Enquiry:</strong> +91 98810 01578 <br> +91 70204 73082</li>
-                    </ul>
+                
+                <div class="overview-grid">
+                    <div class="overview-card reveal">
+                        <div class="overview-icon"><i class="fas fa-home"></i></div>
+                        <h3>Residential Units</h3>
+                        <p>A mix of spacious row houses and modern apartments.</p>
+                        <div class="overview-stats">
+                            <span class="stat-item">157 Row Houses</span>
+                            <span class="stat-item">112 Flats</span>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-card reveal" style="transition-delay: 0.2s;">
+                        <div class="overview-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>Project Type</h3>
+                        <p>Premium Township featuring 2 BHK Row Houses & 1 BHK Flats.</p>
+                        <div class="overview-stats">
+                            <span class="stat-item">2 BHK</span>
+                            <span class="stat-item">1 BHK</span>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-card reveal" style="transition-delay: 0.4s;">
+                        <div class="overview-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>Prime Location</h3>
+                        <p>Gut No. 377, Near Cambridge School,<br>Savangi Bypass, Chikalthana</p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4 reveal">
+                    <p style="max-width: 800px; margin: 0 auto; font-size: 1.2rem; color: var(--premium-text);">
+                        "Shiv Samarth Residency is designed for families who seek comfort, affordability, and a peaceful lifestyle. Every space is planned with attention to detail to ensure happiness and convenience."
+                    </p>
                 </div>
             </div>
         </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Story of the Project -->
+        <section class="section-premium bg-beige">
+            <div class="container">
+                <div class="story-container">
+                    <div class="story-image-group reveal-left">
+                        <img src="assets/Shiv Samarth Residency Brochure_page-0003.jpg" alt="Shiv Samarth Residency Building View" class="story-img-main">
+                        <img src="assets/Shiv Samarth Residency Brochure_page-0004.jpg" alt="Shiv Samarth Residency Layout" class="story-img-overlay">
+                    </div>
+                    <div class="story-content reveal-right">
+                        <h2>Our Journey</h2>
+                        <div class="story-text">
+                            <p>This project started with a vision — to create homes that are not just structures, but spaces filled with happiness, security, and dreams.</p>
+                            <p>From planning each unit layout to designing open spaces, every element of Shiv Samarth Residency reflects thoughtful engineering and modern architecture.</p>
+                            <p>We focused on affordability without compromising quality, ensuring that every family can experience premium living.</p>
+                            <p>Today, this project stands as a symbol of trust, comfort, and a better future.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Project Video Walkthrough -->
+        <section class="section-premium bg-white">
+            <div class="container">
+                <div class="section-header-premium reveal">
+                    <h2>Project Walkthrough</h2>
+                    <p>Experience your future home virtually</p>
+                </div>
+                
+                <div class="video-walkthrough-container reveal">
+                    <div class="video-ratio">
+                        <!-- YouTube Placeholder -->
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Project Walkthrough" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <p class="text-center mt-3 text-muted">A cinematic journey through Shiv Samarth Residency.</p>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Master Plan & Design -->
+        <section class="section-premium bg-beige">
+            <div class="container">
+                <div class="section-header-premium reveal">
+                    <h2>Master Plan & Design</h2>
+                    <p>Thoughtfully planned for a modern lifestyle</p>
+                </div>
+                
+                <div class="overview-grid">
+                    <div class="advantage-item reveal">
+                        <div class="advantage-icon"><i class="fas fa-city"></i></div>
+                        <div class="advantage-text">
+                            <h4>Township Layout</h4>
+                            <p>Well-planned township with organized blocks and wide roads.</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item reveal" style="transition-delay: 0.1s;">
+                        <div class="advantage-icon"><i class="fas fa-tree"></i></div>
+                        <div class="advantage-text">
+                            <h4>Open Spaces</h4>
+                            <p>Lush green spaces and landscaped gardens for fresh air.</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item reveal" style="transition-delay: 0.2s;">
+                        <div class="advantage-icon"><i class="fas fa-parking"></i></div>
+                        <div class="advantage-text">
+                            <h4>Parking Facilities</h4>
+                            <p>Dedicated parking for residents and visitors.</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item reveal" style="transition-delay: 0.3s;">
+                        <div class="advantage-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="advantage-text">
+                            <h4>Safe Environment</h4>
+                            <p>Gated community with 24/7 security for peace of mind.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Advantages -->
+        <section class="section-premium bg-white">
+            <div class="container">
+                <div class="section-header-premium reveal">
+                    <h2>Location Advantages</h2>
+                    <p>Everything you need is just around the corner</p>
+                </div>
+                
+                <div class="location-luxury-grid">
+                    <div class="advantage-item reveal">
+                        <div class="advantage-icon"><i class="fas fa-school"></i></div>
+                        <div class="advantage-text">
+                            <h4>Cambridge School</h4>
+                            <p>Just 0.5 km away — Perfect for your children.</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item reveal">
+                        <div class="advantage-icon"><i class="fas fa-hospital"></i></div>
+                        <div class="advantage-text">
+                            <h4>Hospitals</h4>
+                            <p>Major healthcare facilities within 3–9 km range.</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item reveal">
+                        <div class="advantage-icon"><i class="fas fa-shopping-cart"></i></div>
+                        <div class="advantage-text">
+                            <h4>Malls & Markets</h4>
+                            <p>Nearby supermarkets and shopping destinations.</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item reveal">
+                        <div class="advantage-icon"><i class="fas fa-bus"></i></div>
+                        <div class="advantage-text">
+                            <h4>Transport Hubs</h4>
+                            <p>Easy access to Bus Stand and Airport.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specifications -->
+        <section class="section-premium bg-beige">
+            <div class="container">
+                <div class="section-header-premium reveal">
+                    <h2>Premium Specifications</h2>
+                    <p>Quality construction meets modern design</p>
+                </div>
+                
+                <div class="specs-premium-grid">
+                    <div class="spec-premium-card reveal">
+                        <i class="fas fa-building"></i>
+                        <h4>Structure</h4>
+                        <p>RCC framed structure designed for seismic resistance.</p>
+                    </div>
+                    <div class="spec-premium-card reveal">
+                        <i class="fas fa-paint-roller"></i>
+                        <h4>Finish</h4>
+                        <p>Premium quality paint finish for a long-lasting look.</p>
+                    </div>
+                    <div class="spec-premium-card reveal">
+                        <i class="fas fa-plug"></i>
+                        <h4>Electrical</h4>
+                        <p>Branded electrical fittings and modular switches.</p>
+                    </div>
+                    <div class="spec-premium-card reveal">
+                        <i class="fas fa-th-large"></i>
+                        <h4>Flooring</h4>
+                        <p>High-quality vitrified tiles in all rooms.</p>
+                    </div>
+                    <div class="spec-premium-card reveal">
+                        <i class="fas fa-utensils"></i>
+                        <h4>Kitchen</h4>
+                        <p>Modular kitchen platform with granite top.</p>
+                    </div>
+                    <div class="spec-premium-card reveal">
+                        <i class="fas fa-bath"></i>
+                        <h4>Bathrooms</h4>
+                        <p>Modern fittings from reputed premium brands.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Lifestyle Section -->
+        <section class="container reveal">
+            <div class="lifestyle-banner">
+                <div class="lifestyle-content">
+                    <h2>Live Your Best Life</h2>
+                    <p>"Designed for families, children, and peaceful living.<br>A perfect place to grow, connect, and build memories."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials (Bonus) -->
+        <section class="section-premium bg-beige">
+            <div class="container"> 
+                <div class="section-header-premium reveal">
+                    <h2>What People Say</h2>
+                    <p>Hear from families who chose Shiv Samarth Residency</p>
+                </div>
+                <div class="testimonial-slider reveal">
+                    <div class="testimonial-track" id="testimonialTrack">
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <blockquote>"The location is perfect for our family. Cambridge School is walking distance and the township is well-planned. We are excited about our new home!"</blockquote>
+                            <div class="author">Rajesh & Priya Patil<span>Homebuyers, 2 BHK Row House</span></div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <blockquote>"Affordable yet premium — that's what attracted us. The specifications are top-notch and the builder is transparent with RERA registration."</blockquote>
+                            <div class="author">Sunil Deshmukh<span>Homebuyer, 1 BHK Flat</span></div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <blockquote>"We visited several projects before choosing Shiv Samarth Residency. The open spaces, parking, and family-friendly design convinced us immediately."</blockquote>
+                            <div class="author">Anita & Manoj Kulkarni<span>Homebuyers, 2 BHK Row House</span></div>
+                        </div>
+                    </div>
+                    <div class="slider-dots" id="sliderDots">
+                        <button class="slider-dot active" data-index="0" aria-label="Testimonial 1"></button>
+                        <button class="slider-dot" data-index="1" aria-label="Testimonial 2"></button>
+                        <button class="slider-dot" data-index="2" aria-label="Testimonial 3"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Construction Timeline (Bonus) -->
+        <section class="section-premium bg-white">
+            <div class="container">
+                <div class="section-header-premium reveal">
+                    <h2>Project Timeline</h2>
+                    <p>Tracking our progress to your new home</p>
+                </div>
+                <div class="overview-grid">
+                    <div class="overview-card reveal" style="background: var(--premium-beige);">
+                        <div class="overview-icon"><i class="fas fa-flag-checkered"></i></div>
+                        <h3>Project Start</h3>
+                        <p>Vision & Planning Phase completed.</p>
+                    </div>
+                    <div class="overview-card reveal" style="border-bottom-color: var(--premium-orange);">
+                        <div class="overview-icon"><i class="fas fa-hammer"></i></div>
+                        <h3>Construction</h3>
+                        <p>Project is currently under active construction.</p>
+                        <span class="stat-item mt-2">In Progress</span>
+                    </div>
+                    <div class="overview-card reveal">
+                        <div class="overview-icon"><i class="fas fa-key"></i></div>
+                        <h3>Completion</h3>
+                        <p>Scheduled handover and occupancy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact / CTA -->
+        <section class="section-premium">
+            <div class="container">
+                <div class="cta-premium reveal">
+                    <h2>Ready to Build Your Future?</h2>
+                    <p>Connect with our experts today and book your dream home at Shiv Samarth Residency.</p>
+                    <div class="cta-buttons">
+                        <a href="tel:+919881001578" class="btn-premium btn-orange">
+                            <i class="fas fa-phone-alt mr-2"></i> +91 98810 01578
+                        </a>
+                        <a href="contact.html" class="btn-premium btn-outline-white">Book Site Visit</a>
+                        <a href="contact.html" class="btn-premium btn-outline-white">Schedule Meeting</a>
+                    </div>
+                    <p class="mt-4" style="opacity: 0.6; font-size: 0.9rem;">Also reach us at: +91 70204 73082</p>
+                </div>
+            </div>
+        </section>
+
     </div>
+
+
 
     <!-- Footer -->
     <footer id="footer" class="footer">
@@ -86,11 +388,9 @@
                     <a href="index.html"><img src="assets/logo.png" alt="Samarth Infra Logo" class="logo-img"></a>
                 </div>
                 <div class="footer-links">
-                    <a href="about.html">Overview</a>
-                    <a href="index.html#units">Units</a>
-                    <a href="index.html#specifications">Amenities</a>
-                    <a href="index.html#emi">EMI Calculator</a>
-                    <a href="contact.html">Contact</a>
+                    <div herf="index.html">Home</div>
+                    <a href="about.html">About us </a>
+                    <a href="contact.html">Contact us</a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -122,5 +422,30 @@
 
     <!-- Scripts -->
     <script src="script.js"></script>
+    <script>
+        // Testimonial Slider
+        (function() {
+            const track = document.getElementById('testimonialTrack');
+            const dots = document.querySelectorAll('.slider-dot');
+            if (!track || dots.length === 0) return;
+
+            let current = 0;
+            const total = dots.length;
+
+            function goTo(index) {
+                current = index;
+                track.style.transform = 'translateX(-' + (current * 100) + '%)';
+                dots.forEach(d => d.classList.remove('active'));
+                dots[current].classList.add('active');
+            }
+
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => goTo(parseInt(dot.dataset.index)));
+            });
+
+            // Auto-play every 5 seconds
+            setInterval(() => goTo((current + 1) % total), 5000);
+        })();
+    </script>
 </body>
 </html>
