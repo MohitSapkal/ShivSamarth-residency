@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivsamarth Residency - A World Away From Your Everyday Life</title>
+    <meta name="description" content="Shivsamarth Residency offers premium 2 BHK Row Houses & 1 BHK Flats at Savangi Bypass, Chikalthana, Chhatrapati Sambhajinagar. Discover your dream home today.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="" class="logo-img"></a>
+            
+            <div class="nav-links">
+                <a href="about.html">Overview</a>
+
+                <a href="index.html#location">Location</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="btn btn-gold nav-cta">Book a Site Visit</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-nav-links">
+            <a href="about.html" class="mobile-link">Overview</a>
+            <a href="index.html#units" class="mobile-link">Units</a>
+            <a href="index.html#specifications" class="mobile-link">Amenities</a>
+            <a href="index.html#location" class="mobile-link">Location</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+            <a href="contact.html" class="btn btn-gold mobile-cta">Book a Site Visit</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero section-reveal">
+        <div class="hero-slideshow">
+            <img src="assets/Shiv Samarth Residency Brochure_page-0002.jpg" class="slide active" alt="Apartment Day View">
+            <img src="assets/Shiv Samarth Residency Brochure_page-0004.jpg" class="slide" alt="Aerial View">
+            <img src="assets/Shiv Samarth Residency Brochure_page-0005.jpg" class="slide" alt="Aerial View">
+
+        </div>
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">A World Away From Your Everyday Life</h1>
+            <p class="hero-subtitle">2 BHK Row Houses & 1 BHK Flats | Savangi Bypass, Chikalthana</p>
+            <div class="hero-cta-group">
+                <a href="index.html#units" class="btn btn-gold-filled">Explore Units</a>
+                <a href="assets/Shiv Samarth Residency Brochure.pdf" class="btn btn-outline">Download Brochure</a>
+            </div>
+            <div class="rera-badge floating">
+                <span class="tick">✔</span> MAHA RERA Approved: P51500052807
+            </div>
+        </div>
+    </header>
+
+    <!-- Project Highlights Strip -->
+    <section id="highlights" class="highlights section-reveal">
+        <div class="container highlights-grid">
+            <div class="highlight-card">
+                <div class="counter" data-target="157">0</div>
+                <p>Row Houses</p>
+            </div>
+            <div class="highlight-card">
+                <div class="counter" data-target="112">0</div>
+                <p>Flats</p>
+            </div>
+            <div class="highlight-card">
+                <div class="counter" data-target="529">0</div>
+                <p>sq.ft. Carpet (2BHK)</p>
+            </div>
+            <div class="highlight-card">
+                <div class="counter-text">G+7</div>
+                <p>Floors</p>
+            </div>
+            <div class="highlight-card">
+                <div class="counter" data-target="1">0</div>
+                <p>Gated Community</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section removed: see about.html -->
+
+    <!-- Unit Types Section -->
+    <section id="units" class="units section-reveal">
+        <div class="container">
+            <h2 class="section-title text-center">Explore Our Units</h2>
+            
+            <div class="tabs-container">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="tab-type-a">2 BHK Row House — A Type</button>
+                    <button class="tab-btn" data-tab="tab-type-b">2 BHK Row House — B Type</button>
+                    <button class="tab-btn" data-tab="tab-type-flat">1 BHK Flat</button>
+                </div>
+
+                <!-- Type A -->
+                <div id="tab-type-a" class="tab-content active">
+                    <div class="unit-layout">
+                        <div class="unit-details card">
+                            <h3>Type A Details</h3>
+                            <p><strong>Configuration:</strong> 2 BHK Row House</p>
+                            <p><strong>Floor Count:</strong> Ground + 1</p>
+                            <p><strong>RERA Carpet Area:</strong> 529 sq.ft.</p>
+                            <hr>
+                            <h4>Variants:</h4>
+                            <ul>
+                                <li>Corner: 692 sq.ft. (Built-up)</li>
+                                <li>Middle: 680 sq.ft. (Built-up)</li>
+                                <li>Side Corner: 692 sq.ft. (Built-up)</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-gold-filled mt-4">Enquire Now</a>
+                        </div>
+                        <div class="unit-plan card" style="padding: 0; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #fff;">
+                            <img src="assets/Type A .jpg" alt="Type A Floor Plan" style="max-height: 400px; width: auto; object-fit: contain;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Type B -->
+                <div id="tab-type-b" class="tab-content">
+                    <div class="unit-layout">
+                        <div class="unit-details card">
+                            <h3>Type B Details</h3>
+                            <p><strong>Configuration:</strong> 2 BHK Row House</p>
+                            <p><strong>Floor Count:</strong> Ground + 1</p>
+                            <p><strong>RERA Carpet Area:</strong> 536 sq.ft.</p>
+                            <hr>
+                            <h4>Variants:</h4>
+                            <ul>
+                                <li>B1 & B7: 730 sq.ft. (Built-up)</li>
+                                <li>B2 to B6: 717 sq.ft. (Built-up)</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-gold-filled mt-4">Enquire Now</a>
+                        </div>
+                        <div class="unit-plan card" style="padding: 0; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #fff;">
+                            <img src="assets/Type b.jpg" alt="Type B Floor Plan" style="max-height: 400px; width: auto; object-fit: contain;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flat -->
+                <div id="tab-type-flat" class="tab-content">
+                    <div class="unit-layout">
+                        <div class="unit-details card">
+                            <h3>1 BHK Flat Details</h3>
+                            <p><strong>Configuration:</strong> 1 BHK Apartment</p>
+                            <p><strong>Floor Details:</strong> G+7 High-rise</p>
+                            <p><strong>RERA Carpet Area:</strong> 312 sq.ft.</p>
+                            <hr>
+                            <p><strong>Built-up Range:</strong> 439 - 447 sq.ft.</p>
+                            <a href="contact.html" class="btn btn-gold-filled mt-4">Enquire Now</a>
+                        </div>
+                        <div class="unit-plan card img-placeholder">
+                            <span>[ Floor Plan ]<br><small>Contact for Details</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section id="specifications" class="specifications section-reveal">
+        <div class="container">
+            <h2 class="section-title text-center">Premium Specifications</h2>
+            <div class="specs-grid">
+                <!-- Structure -->
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Structure</h3>
+                    <p>Earthquake-resistant RCC framed structure</p>
+                </div>
+                <!-- Masonry -->
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2" ry="2"/><path d="M2 12h20M12 2v20"/></svg>
+                    </div>
+                    <h3>Masonry</h3>
+                    <p>6" external & 4" internal premium quality walls</p>
+                </div>
+                <!-- Flooring -->
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    </div>
+                    <h3>Flooring</h3>
+                    <p>600×600mm Vitrified elegant tiles</p>
+                </div>
+                <!-- Doors -->
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14"/><path d="M2 20h20"/><path d="M14 12v.01"/></svg>
+                    </div>
+                    <h3>Doors</h3>
+                    <p>Teak wood main door with premium hardware</p>
+                </div>
+                <!-- Kitchen -->
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 2v20M20 2v20M4 14h16"/></svg>
+                    </div>
+                    <h3>Kitchen</h3>
+                    <p>Granite counter top with Stainless Steel sink</p>
+                </div>
+                <!-- Windows -->
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><path d="M4 12h16M12 4v16"/></svg>
+                    </div>
+                    <h3>Windows</h3>
+                    <p>Powder-coated aluminium sliding windows</p>
+                </div>
+                <!-- Plumbing -->
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10a8 8 0 0 1 16 0"/><path d="M6 14h12"/><path d="M12 14v6"/></svg>
+                    </div>
+                    <h3>Plumbing</h3>
+                    <p>Concealed plumbing with chrome luxury fittings</p>
+                </div>
+                <!-- Painting -->
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l4 4-4 4-4-4 4-4zM2 22v-4l10-10 4 4-10 10H2z"/></svg>
+                    </div>
+                    <h3>Painting</h3>
+                    <p>Apex/ACC exterior + Premium Emulsion for interior</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Distances Section -->
+    <section id="location" class="location section-reveal">
+        <div class="container">
+            <h2 class="section-title text-center">Always Connected</h2>
+            <p class="text-center mb-4">Savangi Bypass, Chikalthana, Chhatrapati Sambhajinagar</p>
+
+            <div class="location-container card">
+                <div class="location-tabs-nav">
+                    <button class="loc-tab-btn active" data-target="loc-schools">Schools</button>
+                    <button class="loc-tab-btn" data-target="loc-hospitals">Hospitals</button>
+                    <button class="loc-tab-btn" data-target="loc-shopping">Shopping</button>
+                    <button class="loc-tab-btn" data-target="loc-transport">Transport & Ent.</button>
+                </div>
+
+                <div class="location-contents">
+                    <div id="loc-schools" class="loc-list active">
+                        <ul>
+                            <li><span>Cambridge High School</span> <span class="badge">1.5 km</span></li>
+                            <li><span>Poddar International</span> <span class="badge">3.2 km</span></li>
+                            <li><span>JNEC College</span> <span class="badge">4.5 km</span></li>
+                        </ul>
+                    </div>
+                    <div id="loc-hospitals" class="loc-list">
+                        <ul>
+                            <li><span>MGM Hospital</span> <span class="badge">4.0 km</span></li>
+                            <li><span>Seth Nandlal Dhoot Hospital</span> <span class="badge">3.5 km</span></li>
+                            <li><span>Apex Hospital</span> <span class="badge">2.8 km</span></li>
+                        </ul>
+                    </div>
+                    <div id="loc-shopping" class="loc-list">
+                        <ul>
+                            <li><span>Prozone Mall</span> <span class="badge">4.2 km</span></li>
+                            <li><span>Cannaught Place</span> <span class="badge">5.5 km</span></li>
+                        </ul>
+                    </div>
+                    <div id="loc-transport" class="loc-list">
+                        <ul>
+                            <li><span>Chikalthana Bus Stand</span> <span class="badge">0.70 km</span></li>
+                            <li><span>Airport</span> <span class="badge">4.90 km</span></li>
+                            <li><span>Railway Station</span> <span class="badge">7.5 km</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118228.69460291999!2d75.253683!3d19.876506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd1d6620ca9628d%3A0x6bba847c1ba4bbfe!2sChikalthana%2C%20Aurangabad%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1689255018610!5m2!1sen!2sin" 
+                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EMI Calculator Section -->
+    <section id="emi" class="emi section-reveal">
+        <div class="container">
+            <div class="emi-grid">
+                <div class="emi-info">
+                    <h2 class="section-title">Home Loan EMI Calculator</h2>
+                    <p>Plan your financials easily. Adjust the sliders to estimate your monthly EMI.</p>
+                </div>
+                <div class="emi-card card">
+                    <div class="emi-inputs">
+                        <div class="form-group">
+                            <label>Property Price: ₹<span id="price-val">50</span> Lakhs</label>
+                            <input type="range" id="price-slider" min="20" max="80" value="50" step="1">
+                        </div>
+                        <div class="form-group">
+                            <label>Down Payment: <span id="dp-val">20</span>%</label>
+                            <input type="range" id="dp-slider" min="10" max="30" value="20" step="1">
+                        </div>
+                        <div class="form-group radio-group">
+                            <label>Loan Tenure (Years):</label>
+                            <div class="radios">
+                                <label><input type="radio" name="tenure" value="10"> 10</label>
+                                <label><input type="radio" name="tenure" value="15" checked> 15</label>
+                                <label><input type="radio" name="tenure" value="20"> 20</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Interest Rate (%):</label>
+                            <input type="number" id="roi-input" value="8.5" step="0.1" min="6" max="15" class="num-input">
+                        </div>
+                    </div>
+                    
+                    <div class="emi-results">
+                        <div class="result-box">
+                            <h4>Loan Amount</h4>
+                            <p class="h3">₹<span id="res-loan">40,00,000</span></p>
+                        </div>
+                        <div class="result-box primary-result">
+                            <h4>Monthly EMI</h4>
+                            <p class="h3 text-gold">₹<span id="res-emi">39,390</span></p>
+                        </div>
+                        <div class="result-box">
+                            <h4>Total Payable</h4>
+                            <p>₹<span id="res-total">70,90,166</span></p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-small text-center mt-3 text-muted">EMI is indicative. Consult your bank for exact terms.</p>
+                    <div class="text-center mt-3">
+                        <a href="https://homeloans.sbi/getoffers" target="_blank" class="btn btn-gold-filled w-100">Apply for Home Loan (SBI)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-choose-us" class="why-us section-reveal">
+        <div class="container">
+            <h2 class="section-title text-center">Why Choose Us</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h4>CREDAI Member</h4>
+                    <p>Chhatrapati Sambhajinagar</p>
+                </div>
+                <div class="why-card">
+                    <h4>MAHA RERA</h4>
+                    <p>Registered: P51500052807</p>
+                </div>
+                <div class="why-card">
+                    <h4>Earthquake Resistant</h4>
+                    <p>RCC framed structure</p>
+                </div>
+                <div class="why-card">
+                    <h4>Prime Location</h4>
+                    <p>0.70 km from Bus Stand</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team / Credits Section -->
+    <section id="team" class="team section-reveal">
+        <div class="container text-center">
+            <h2 class="section-title">Our Partners</h2>
+            <div class="team-flex">
+                <div class="team-member">
+                    <div class="avatar">SA</div>
+                    <h5>Samil Architects</h5>
+                    <p>Architect</p>
+                </div>
+                <div class="team-member">
+                    <div class="avatar">NM</div>
+                    <h5>Niranjan Muley</h5>
+                    <p>RCC Consultant</p>
+                </div>
+                <div class="team-member">
+                    <div class="avatar">PP</div>
+                    <h5>Adv. Prakash Paithankar</h5>
+                    <p>Legal Advisor</p>
+                </div>
+                <div class="team-member">
+                    <div class="avatar">S&A</div>
+                    <h5>Sara & Associates</h5>
+                    <p>MEP Consultant</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section removed: see contact.html -->
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="assets/logo.png" alt="Samarth Infra Logo" class="logo-img"></a>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">Overview</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="disclaimer">
+                    <strong>Disclaimer:</strong> This brochure/website is purely conceptual and not a legal offering. The promoters/developers reserve the right to amend layouts, plans, elevations, color schemes, specifications & amenities without prior notice.
+                </p>
+                <div class="footer-meta" style="display:flex; justify-content:space-between; align-items:flex-end;">
+                    <div class="footer-qr" style="margin-top: 1rem;">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://maharerait.mahaonline.gov.in/PrintPreview/PrintPreview?q=P51500052807" alt="MahaRERA QR Code" style="background:#fff; padding:5px; border-radius:4px;">
+                    </div>
+                    <div style="text-align: right;">
+                        <p>MAHA RERA Registration No: P51500052807</p>
+                        <p>&copy; 2026 Samarth Infra. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Mobile "Book Site Visit" Bar (Mobile Only) -->
+    <div class="mobile-sticky-bottom">
+        <a href="contact.html" class="btn btn-gold-filled w-100">Book A Site Visit</a>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919881001578?text=Hi,%20I'm%20interested%20in%20Shivsamarth%20Residency.%20Please%20share%20details." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 2a13 13 0 0 0-11 20l-2 7 7-2a13 13 0 1 0 6-25zm0 24a11 11 0 0 1-5-1l-4 1 1-4a11 11 0 1 1 8 4zm5-7c-.3 0-1.5-.7-1.7-.8-.2-.1-.4-.2-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.6.1-1-.4-1.9-.9-2.7-1.8-.6-.7-1.1-1.6-1.5-2.5-.1-.2 0-.3.1-.4.1-.1.2-.3.4-.4.1-.1.2-.3.2-.4s-.1-.3-.2-.5c-.1-.3-.5-1.2-.7-1.7-.2-.4-.3-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.6.6-1.5 1.5-1.5 3.3s1.5 3.7 1.8 3.9c.2.3 2.6 4.1 6.3 5.7 2.2.9 3.5 1 4.5.9 1.1-.1 2.3-.9 2.6-1.9.3-1 .3-1.8.2-1.9-.2-.2-.4-.3-.7-.4z"/></svg>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
